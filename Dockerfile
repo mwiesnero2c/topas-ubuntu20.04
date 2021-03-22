@@ -7,7 +7,7 @@ RUN apt update && \
 	clang-tidy clang python-yaml fontconfig python3-pip\
  && rm -rf /var/lib/apt/lists/* 
 RUN apt-get update && \
-    apt-get install -y qt5-qmake qt5-default libqt5charts5 libqt5charts5-dev openssh-client && \
+    apt-get install -y qt5-qmake qt5-default libqt5charts5 libqt5charts5-dev libqt5svg5-dev openssh-client && \
     apt-get clean && \
     strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5 && \
     rm -rf /var/lib/apt/lists/*

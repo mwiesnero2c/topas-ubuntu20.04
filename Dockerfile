@@ -4,7 +4,7 @@ RUN apt update && \
  apt install -y wget gcc make cmake g++ git \
         valgrind libboost-all-dev language-pack-en-base libboost-python-dev python3-dev \
 	sshpass\
-	clang-tidy clang python-yaml fontconfig python3-pip\
+	clang-tidy clang python-yaml fontconfig python3-pip time\
  && rm -rf /var/lib/apt/lists/* 
 RUN apt-get update && \
     apt-get install -y qt5-qmake qt5-default libqt5charts5 libqt5charts5-dev libqt5svg5-dev openssh-client && \
